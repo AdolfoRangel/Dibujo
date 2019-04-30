@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnAniadir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_stat_name" />
+
+        <ImageButton
+            android:id="@+id/btnTrazo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/trazo" />
+
+        <ImageButton
+            android:id="@+id/btnBorrar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/borrar" />
+        <ImageButton
+            android:id="@+id/btnfoto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/foto" />
+        <ImageButton
+            android:id="@+id/btnrectangulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/rectangulo" />
+
+
+        <ImageButton
+            android:id="@+id/btnGuardar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/guardar" />
+
+    </LinearLayout>
+    <!--
+        <view
+            class="com.rangel.dibujo.Lienzo"
+            id="@+id/lienzo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#fff">
+
+        </view>-->
+    <com.rangel.dibujo.Lienzo
+        android:id="@+id/lienzo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnNegro"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/alturacolor"
+            android:layout_weight="1"
+            android:background="#ff000000"
+            android:tag="#ff000000" />
+
+        <ImageButton
+            android:id="@+id/btnBlanco"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/alturacolor"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:tag="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/btnVerde"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/alturacolor"
+            android:layout_weight="1"
+            android:background="#009688"
+            android:tag="#009688" />
+
+        <ImageButton
+            android:id="@+id/btnAzul"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/alturacolor"
+            android:layout_weight="1"
+            android:background="#2196F3"
+            android:tag="#2196F3" />
+
+        <ImageButton
+            android:id="@+id/btnRojo"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/alturacolor"
+            android:layout_weight="1"
+            android:background="#F44336"
+            android:tag="#F44336" />
+    </LinearLayout>
+</LinearLayout>

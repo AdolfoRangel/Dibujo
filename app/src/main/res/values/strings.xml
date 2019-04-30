@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Dibujo</string>
+    <string name="peque_o">Pequeño</string>
+    <string name="mediano">Mediano</string>
+    <string name="grande">Grande</string>
+</resources>
